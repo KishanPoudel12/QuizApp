@@ -10,12 +10,13 @@ export const QuizContextProvider = ({ children }) => {
   const [selectedAns, setSelectedAns] = useState([]);
   const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(0);
-  const [finalTime,setFinalTime]=useState(null)
+  const [finalTime, setFinalTime] = useState(null);
   const navigate = useNavigate();
 
   const resetQuiz = () => {
     setCurrInd(0);
     setSelectedAns([]);
+    setFinalTime(null)
     setSubmitted(false);
     setCorrect(0);
   };
@@ -45,19 +46,19 @@ export const QuizContextProvider = ({ children }) => {
     }
   };
 
-  const handleSubmit = (e,seconds) => {
+  const handleSubmit = (e, seconds) => {
     e.preventDefault();
-    setFinalTime(seconds)
+    setFinalTime(seconds);
     setSubmitted(true);
-    
+
     const correctAns = questions.reduce((count, qstn, ind) => {
-      console.log("selected Ans =>",selectedAns)
+      console.log("selected Ans =>", selectedAns);
       return qstn.answer === selectedAns[ind] ? count + 1 : count;
     }, 0);
 
-    console.log("correctAns is =>",correctAns)
+    console.log("correctAns is =>", correctAns);
     console.log("correct is =>", correct);
-    setCorrect(correctAns)
+    setCorrect(correctAns);
     handleScore(correctAns);
     //form leaderboard
     navigate("/result");
@@ -80,7 +81,7 @@ export const QuizContextProvider = ({ children }) => {
         correct,
         resetQuiz,
         seeResult,
-        finalTime
+        finalTime,
       }}
     >
       {children}

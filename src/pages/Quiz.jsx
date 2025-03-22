@@ -71,7 +71,7 @@ const onSubmit=(e)=>{
         {currIndex === questions.length - 1 && (
           <button
             onClick={onSubmit}
-            // disabled={submitted}
+            disabled={submitted}
             className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-lg transition"
           >
             {submitted ? "Go to Result" : "Submit"}
