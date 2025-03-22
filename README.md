@@ -4,39 +4,39 @@ QuizApp is a React-based Quiz & Leaderboard Management System that tracks user s
 
 ## 🚀 Features
 
-      Interactive Quiz System 📖
+#### Interactive Quiz System 📖
 
-      Leaderboard with Local Storage 🏆
+####  Leaderboard with Local Storage 🏆
 
-      Auth0 Authentication for Secure Login 🔒
+#### Auth0 Authentication for Secure Login 🔒
 
-      React Context API for State Management ⚛️
+####  React Context API for State Management ⚛️
 
-      Built with Vite for Fast Development ⚡
+####  Built with Vite for Fast Development ⚡
 
 ## 🛠️ Tech Stack
 
-      Frontend: React, Vite, TailwindCSS
+#### Frontend: React, Vite, TailwindCSS
 
-      State Management: Context API
+#### State Management: Context API
 
-      Authentication: Auth0
+#### Authentication: Auth0
 
-      Routing: React Router
+#### Routing: React Router
 
 ## 🏗️ Installation & Setup
+
 ```sh
    ### 1️⃣ Clone the Repository
             git clone https://github.com/KishanPoudel12/QuizApp.git
             cd QuizApp
 
 
-   ### 2️⃣ Install Dependencies 
+   ### 2️⃣ Install Dependencies
             npm install
 
 
    ### 3️⃣ Run the Development Server
             npm run dev
 
- ```
- 
+```
