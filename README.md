@@ -2,6 +2,7 @@
 
 QuizApp is a React-based Quiz & Leaderboard Management System that tracks user scores using local storage. It is built using React Context API and integrates Auth0 authentication for user login.
 
+### Static Page Hosted On :   https://kishanpoudel12.github.io/QuizApp/ 
 ## 🚀 Features
 
 #### Interactive Quiz System 📖
